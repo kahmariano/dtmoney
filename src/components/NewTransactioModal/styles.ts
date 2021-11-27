@@ -61,7 +61,7 @@ interface RadioBoxProps {
 }
 
 const colors = {
-  green: '#33cc95',
+  green: '#33CC95',
   red: '#e52e4d'
 }
 
@@ -72,7 +72,7 @@ export const RadioBox = styled.button<RadioBoxProps>`
 
   background: ${props =>
     props.isActive
-      ? transparentize(0.9, colors[props.activeColor])
+      ? transparentize(0.8, colors[props.activeColor])
       : 'transparent'};
 
   display: flex;

@@ -18,7 +18,7 @@ export function NewTransactionModal({
   const [title, setTitle] = useState('')
   const [value, setValue] = useState(0)
   const [category, setCategory] = useState('')
-  const [type, setType] = useState('deposit')
+  const [type, setType] = useState('deposito')
 
   function handleCreateNewTransaction(event: FormEvent) {
     event.preventDefault()
@@ -41,7 +41,7 @@ export function NewTransactionModal({
         onClick={onRequestClose}
         className="react-modal-close"
       >
-        <img src={closeImg} alt="Fechat Modal" />
+        <img src={closeImg} alt="Fechar Modal" />
       </button>
 
       <Container onSubmit={handleCreateNewTransaction}>
@@ -63,9 +63,9 @@ export function NewTransactionModal({
           <RadioBox
             type="button"
             onClick={() => {
-              setType('deposit')
+              setType('deposito')
             }}
-            isActive={type === 'deposit'}
+            isActive={type === 'deposito'}
             activeColor="green"
           >
             <img src={incomeImg} alt="Entradas" />

@@ -1,11 +1,11 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import { createServer, Model } from 'miragejs'
 import { App } from './App'
+import ReactDOM from 'react-dom'
 
 createServer({
   models: {
-    transactions: Model
+    transaction: Model
   },
   seeds(server) {
     server.db.loadData({
@@ -13,10 +13,10 @@ createServer({
         {
           id: 1,
           title: 'freelance de website',
-          type: 'deposit',
+          type: 'deposito',
           category: 'dev',
           amount: 6000,
-          createdAt: new Date('2021-11-25 23:34:00')
+          createdAt: new Date('2021-12-03 23:34:00')
         },
         {
           id: 2,
@@ -24,7 +24,7 @@ createServer({
           type: 'withdraw',
           category: 'casa',
           amount: 950,
-          createdAt: new Date('2021-12- 23:34:00')
+          createdAt: new Date('2021-12-02 23:34:00')
         }
       ]
     })
